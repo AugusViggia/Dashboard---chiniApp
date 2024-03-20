@@ -1,14 +1,14 @@
-import "./App.scss";
-import SignIn from "./components/Auth/SignIn/SignIn";
-import SignUp from "./components/Auth/SignUp/SignUp";
-import AuthDetails from "./components/Auth/AuthDetails/AuthDetails";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
+import LoginView from "./views/LoginView/LoginView";
 
 function App() {
   return (
     <div className="App">
-      <SignIn />
-      <SignUp />
-      <AuthDetails/>
+      <Routes>
+        <Route path="/" element={<LoginView/>}/>
+      </Routes>
     </div>
   );
 };
