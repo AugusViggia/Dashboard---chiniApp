@@ -21,5 +21,5 @@ const db = getFirestore(app)
 export {
   auth,
   provider,
-  db
-}
+  db  
+} 
